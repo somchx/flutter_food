@@ -42,12 +42,12 @@ class _LoginPageState extends State<LoginPage> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             // ไล่เฉดจากมุมบนซ้ายไปมุมล่างขวาของ Container
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             // ไล่เฉดจากสีแดงไปสีน้ำเงิน
             colors: [
-              Colors.red,
-              Colors.blue,
+              Colors.white,
+              Colors.blue.shade100,
             ],
           ),
         ),
@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                           height: 22.0,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.blue.shade50,
+                            color: Colors.blue.shade200,
                           ),
                         ),
                       ),
@@ -154,11 +154,11 @@ class _LoginPageState extends State<LoginPage> {
       if(input.length ==6){
         if(input == '123456'){
           Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondRoute()));
-          input='';
         }
         else{
           _showMaterialDialog('ERROR', 'Invalid PIN. Please try again.');
         }
+        input='';
       }
     });
   }
