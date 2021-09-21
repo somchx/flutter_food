@@ -12,7 +12,6 @@ class _LoginPageState extends State<LoginPage> {
 
   String input = '';
 
-
   void _showMaterialDialog(String title, String msg) {
     showDialog(
       context: context,
@@ -77,7 +76,6 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              //if(count ==6) _feedback = _setCheck(),
               Expanded(
                 flex: 1,
                 child: Row(
@@ -139,7 +137,6 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
-
   }
 
   void _handleClickButton(int num) {
@@ -196,9 +193,8 @@ class LoginButton extends StatelessWidget {
       ),
     );
   }
-
-
 }
+
 class SecondRoute extends StatelessWidget {
   const SecondRoute({Key? key}) : super(key: key);
 
