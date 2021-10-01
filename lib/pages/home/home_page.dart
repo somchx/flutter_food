@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food/pages/FoodPage.dart';
-import 'package:flutter_food/pages/login/login_page.dart';
 
 import '../ProfilePage.dart';
 
@@ -15,7 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var _subPageIndex = 0;
-  var _selectedBottomNavIndex=0;
+  //var _selectedBottomNavIndex=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
