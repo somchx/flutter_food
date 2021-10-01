@@ -23,12 +23,16 @@ class ProfilePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Icon(
-                    Icons.person,
-                    size: 50.0,
-                    color: Colors.white,
+                  ClipRRect(
+                      borderRadius: BorderRadius.circular(80.0),
+                      child: Container(
+                        width: 80.0,
+                        height: 80.0,
+                        child: Image.asset('assets/images/dog.jpg'),
+                      )
                   ),
-                  Text('Chananya Aiamprakhon'),
+                  Text('Chananya Aiamprakhon',style: TextStyle(color: Colors.white),),
+                  Text('aiamprakhon_c@silpakorn.edu',style: TextStyle(color: Colors.white),),
                 ],
               ),
             ),
